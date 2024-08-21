@@ -4,6 +4,7 @@ import '../App.css'
 
 const ZombieFighters = (props) => {
   const {fighter} = props
+  const {handleAddFighter} = props
   return(
 <ul>
 
@@ -15,7 +16,7 @@ const ZombieFighters = (props) => {
       <h2>Agility: {fighter.agility}</h2>
      
         
-      <button type="submit">Add</button>cd ..
+      <button onClick={() => handleAddFighter(fighter)}>Add</button>
     </li>
 </ul>
   )
